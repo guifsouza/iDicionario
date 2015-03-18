@@ -7,16 +7,19 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "Letra.h"
+#import "LetraViewController.h"
+#import "Alfabeto.h"
 
-@implementation MackenzieAppDelegate
+@implementation MackenzieAppDelegate 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
     
+    Alfabeto *alfabeto = [Alfabeto sharedInstance];
+    
+    LetraViewController *viewController = [[LetraViewController alloc] initWithNibName:nil bundle:nil];
+    [viewController setLetraAtual:[alfabeto proximaLetra]];
     
     self.navigationController = [[UINavigationController alloc]
                                  initWithRootViewController:viewController];
@@ -30,7 +33,12 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+    
+    
+    
 }
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application
