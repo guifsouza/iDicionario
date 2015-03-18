@@ -39,61 +39,69 @@ static bool isFirstAccess = YES;
     return SINGLETON;
 }
 
+- (NSArray *)retornaAlfabeto {
+    
+    if ([Letras count] > 0)
+        return Letras;
+    else
+        return nil;
+}
+
 - (void)populaAlfabeto {
     
     Letras = [NSMutableArray new];
     
-    Letra *letraA = [[Letra alloc] initWithPalavra:@"Abelha" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/abelha.png"];
+    Letra *letraA = [[Letra alloc] initWithPalavra:@"Abelha" UrlImagem:@"abelha"];
     [Letras addObject:letraA];
-    Letra *letraB = [[Letra alloc] initWithPalavra:@"Bola" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/images/bola.png"];
+    Letra *letraB = [[Letra alloc] initWithPalavra:@"Bola" UrlImagem:@"bola"];
     [Letras addObject:letraB];
-    Letra *letraC = [[Letra alloc] initWithPalavra:@"Carro" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/carro.png"];
+    Letra *letraC = [[Letra alloc] initWithPalavra:@"Carro" UrlImagem:@"carro"];
     [Letras addObject:letraC];
-    Letra *letraD = [[Letra alloc] initWithPalavra:@"Dado" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/dado.png"];
+    Letra *letraD = [[Letra alloc] initWithPalavra:@"Dado" UrlImagem:@"dado"];
     [Letras addObject:letraD];
-    Letra *letraE = [[Letra alloc] initWithPalavra:@"Esquilo" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/esquilo.gif"];
+    Letra *letraE = [[Letra alloc] initWithPalavra:@"Esquilo" UrlImagem:@"esquilo"];
     [Letras addObject:letraE];
-    Letra *letraF = [[Letra alloc] initWithPalavra:@"Faca" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/faca.png"];
+    Letra *letraF = [[Letra alloc] initWithPalavra:@"Faca" UrlImagem:@"faca"];
     [Letras addObject:letraF];
-    Letra *letraG = [[Letra alloc] initWithPalavra:@"Gato" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/gato.png"];
+    Letra *letraG = [[Letra alloc] initWithPalavra:@"Gato" UrlImagem:@"gato"];
     [Letras addObject:letraG];
-    Letra *letraH = [[Letra alloc] initWithPalavra:@"Helicóptero" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/helicoptero.png"];
+    Letra *letraH = [[Letra alloc] initWithPalavra:@"Helicóptero" UrlImagem:@"helicoptero"];
     [Letras addObject:letraH];
-    Letra *letraI = [[Letra alloc] initWithPalavra:@"Igreja" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/igreja.png"];
+    Letra *letraI = [[Letra alloc] initWithPalavra:@"Igreja" UrlImagem:@"igreja"];
     [Letras addObject:letraI];
-    Letra *letraJ = [[Letra alloc] initWithPalavra:@"Janela" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/janela.png"];
+    Letra *letraJ = [[Letra alloc] initWithPalavra:@"Janela" UrlImagem:@"janela"];
     [Letras addObject:letraJ];
-    Letra *letraK = [[Letra alloc] initWithPalavra:@"Ketchup" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/ketchup.png"];
+    Letra *letraK = [[Letra alloc] initWithPalavra:@"Ketchup" UrlImagem:@"ketchup"];
     [Letras addObject:letraK];
-    Letra *letraL = [[Letra alloc] initWithPalavra:@"Lâmpada" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/lampada.png"];
+    Letra *letraL = [[Letra alloc] initWithPalavra:@"Lâmpada" UrlImagem:@"lampada"];
     [Letras addObject:letraL];
-    Letra *letraM = [[Letra alloc] initWithPalavra:@"Moeda" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/moeda.png"];
+    Letra *letraM = [[Letra alloc] initWithPalavra:@"Moeda" UrlImagem:@"moeda"];
     [Letras addObject:letraM];
-    Letra *letraN = [[Letra alloc] initWithPalavra:@"Navio" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/navio.png"];
+    Letra *letraN = [[Letra alloc] initWithPalavra:@"Navio" UrlImagem:@"navio"];
     [Letras addObject:letraN];
-    Letra *letraO = [[Letra alloc] initWithPalavra:@"Ovo" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/ovo.png"];
+    Letra *letraO = [[Letra alloc] initWithPalavra:@"Ovo" UrlImagem:@"ovo"];
     [Letras addObject:letraO];
-    Letra *letraP = [[Letra alloc] initWithPalavra:@"Pato" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/pato.png"];
+    Letra *letraP = [[Letra alloc] initWithPalavra:@"Pato" UrlImagem:@"pato"];
     [Letras addObject:letraP];
-    Letra *letraQ = [[Letra alloc] initWithPalavra:@"Queijo" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/queijo.png"];
+    Letra *letraQ = [[Letra alloc] initWithPalavra:@"Queijo" UrlImagem:@"queijo"];
     [Letras addObject:letraQ];
-    Letra *letraR = [[Letra alloc] initWithPalavra:@"Rã" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/ra.png"];
+    Letra *letraR = [[Letra alloc] initWithPalavra:@"Rã" UrlImagem:@"ra"];
     [Letras addObject:letraR];
-    Letra *letraS = [[Letra alloc] initWithPalavra:@"Sabão" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/sabao.png"];
+    Letra *letraS = [[Letra alloc] initWithPalavra:@"Sabão" UrlImagem:@"sabao"];
     [Letras addObject:letraS];
-    Letra *letraT = [[Letra alloc] initWithPalavra:@"Torta" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/torta.png"];
+    Letra *letraT = [[Letra alloc] initWithPalavra:@"Torta" UrlImagem:@"torta"];
     [Letras addObject:letraT];
-    Letra *letraU = [[Letra alloc] initWithPalavra:@"Unicórnio" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/unicornio.png"];
+    Letra *letraU = [[Letra alloc] initWithPalavra:@"Unicórnio" UrlImagem:@"unicornio"];
     [Letras addObject:letraU];
-    Letra *letraV = [[Letra alloc] initWithPalavra:@"Violão" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/violao.png"];
+    Letra *letraV = [[Letra alloc] initWithPalavra:@"Violão" UrlImagem:@"violao"];
     [Letras addObject:letraV];
-    Letra *letraW = [[Letra alloc] initWithPalavra:@"Whisky" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/whisky.png"];
+    Letra *letraW = [[Letra alloc] initWithPalavra:@"Whisky" UrlImagem:@"whisky"];
     [Letras addObject:letraW];
-    Letra *letraX = [[Letra alloc] initWithPalavra:@"Xadrez" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/xadrez.png"];
+    Letra *letraX = [[Letra alloc] initWithPalavra:@"Xadrez" UrlImagem:@"xadrez"];
     [Letras addObject:letraX];
-    Letra *letraY = [[Letra alloc] initWithPalavra:@"Yu-Gi-Oh" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/yugioh.png"];
+    Letra *letraY = [[Letra alloc] initWithPalavra:@"Yu-Gi-Oh" UrlImagem:@"yugioh"];
     [Letras addObject:letraY];
-    Letra *letraZ = [[Letra alloc] initWithPalavra:@"Zebra" UrlImagem:@"/Users/guilhermeferreiradesouza/Documents/Projetos/iDicionario/Navigation/images/zebra.png"];
+    Letra *letraZ = [[Letra alloc] initWithPalavra:@"Zebra" UrlImagem:@"zebra"];
     [Letras addObject:letraZ];
     
 }

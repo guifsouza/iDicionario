@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Vinicius Miana. All rights reserved.
 //
 
-#import "LetraViewController.h"
+#import "NavigationDictionaryViewController.h"
 #import "Alfabeto.h"
 
-@interface LetraViewController ()
+@interface NavigationDictionaryViewController ()
 
 @end
 
-@implementation LetraViewController {
+@implementation NavigationDictionaryViewController {
     
     Alfabeto *alfabeto;
     bool executando;
@@ -24,15 +24,15 @@
     [super viewDidLoad];
 
     alfabeto = [Alfabeto sharedInstance];
-    
+
 }
 
 - (void) recarregaInterface {
     
    [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    self.title = [self.letraAtual.palavra substringToIndex:1];
-    
+    [self.navigationController.tabBarItem setTitle:@"Navegação"];
+    self.navigationItem.title = [self.letraAtual.palavra substringToIndex:1];
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -41,7 +41,9 @@
                                  initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(previous:)];
     self.navigationItem.leftBarButtonItem = previous;
     
-    
+//    UILabel *letraLabel = [UILabel init];
+//    [letraLabel setText:[self.letraAtual.palavra substringToIndex:1]];
+//    
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao
      setTitle:self.letraAtual.palavra
@@ -51,18 +53,20 @@
     [self.view addSubview:botao];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(35, -500, 250, 250)];
-    [imageView setImage:[UIImage imageWithContentsOfFile:self.letraAtual.caminhoImagem]];
+    
+    NSString *imgUrl = [[NSBundle mainBundle] pathForResource:self.letraAtual.caminhoImagem ofType:@"png"];
+    [imageView setImage:[UIImage imageWithContentsOfFile:imgUrl]];
     [self.view addSubview:imageView];
     
     [UIView animateWithDuration:0.6
-                          delay:0.2
+                          delay:0
                         options:UIViewAnimationOptionOverrideInheritedCurve
                      animations:^(void) {
-                         imageView.frame = CGRectMake(35, 100, 250, 250);
+                         imageView.frame = CGRectMake(35, 150, 250, 250);
                      }
                      completion:nil];
     
-    [botao setCenter:CGPointMake(imageView.center.x, imageView.center.y + 250)];
+    [botao setCenter:CGPointMake(imageView.center.x, imageView.center.y + 150)];
 }
 
 
@@ -85,7 +89,7 @@
     
     int selfIndex = [self.navigationController.viewControllers indexOfObject:self];
     
-    LetraViewController *view = nil;
+    NavigationDictionaryViewController *view = nil;
     NSMutableArray *viewsArray = [self.navigationController.viewControllers mutableCopy];
     
     if (selfIndex == 2) {
@@ -94,7 +98,7 @@
         [self.navigationController setViewControllers:viewsArray];
         
     } else if (selfIndex <= 1) {
-        view = [[LetraViewController alloc] initWithNibName:nil bundle:nil];
+        view = [[NavigationDictionaryViewController alloc] initWithNibName:nil bundle:nil];
     }
 
     [view setLetraAtual:[alfabeto proximaLetra]];
@@ -112,7 +116,7 @@
     
     int selfIndex = [self.navigationController.viewControllers indexOfObject:self];
     
-    LetraViewController *view = nil;
+    NavigationDictionaryViewController *view = nil;
     NSMutableArray *viewsArray = [self.navigationController.viewControllers mutableCopy];
     
     if (selfIndex == 2) {
@@ -121,7 +125,7 @@
         [self.navigationController setViewControllers:viewsArray];
         
     } else if (selfIndex <= 1) {
-        view = [[LetraViewController alloc] initWithNibName:nil bundle:nil];
+        view = [[NavigationDictionaryViewController alloc] initWithNibName:nil bundle:nil];
     }
     
     [view setLetraAtual:[alfabeto letraAnterior]];

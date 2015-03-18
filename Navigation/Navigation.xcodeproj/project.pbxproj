@@ -8,8 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		2531C2111AB7212200CA7CFB /* Alfabeto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2531C2101AB7212200CA7CFB /* Alfabeto.m */; };
+		256C5DE01AB99E38003B669D /* abelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DC61AB99E38003B669D /* abelha.png */; };
+		256C5DE11AB99E38003B669D /* bola.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DC71AB99E38003B669D /* bola.png */; };
+		256C5DE21AB99E38003B669D /* carro.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DC81AB99E38003B669D /* carro.png */; };
+		256C5DE31AB99E38003B669D /* dado.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DC91AB99E38003B669D /* dado.png */; };
+		256C5DE51AB99E38003B669D /* faca.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DCB1AB99E38003B669D /* faca.png */; };
+		256C5DE61AB99E38003B669D /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DCC1AB99E38003B669D /* gato.png */; };
+		256C5DE71AB99E38003B669D /* helicoptero.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DCD1AB99E38003B669D /* helicoptero.png */; };
+		256C5DE81AB99E38003B669D /* igreja.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DCE1AB99E38003B669D /* igreja.png */; };
+		256C5DE91AB99E38003B669D /* janela.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DCF1AB99E38003B669D /* janela.png */; };
+		256C5DEA1AB99E38003B669D /* ketchup.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD01AB99E38003B669D /* ketchup.png */; };
+		256C5DEB1AB99E38003B669D /* lampada.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD11AB99E38003B669D /* lampada.png */; };
+		256C5DEC1AB99E38003B669D /* moeda.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD21AB99E38003B669D /* moeda.png */; };
+		256C5DED1AB99E38003B669D /* navio.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD31AB99E38003B669D /* navio.png */; };
+		256C5DEE1AB99E38003B669D /* ovo.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD41AB99E38003B669D /* ovo.png */; };
+		256C5DEF1AB99E38003B669D /* pato.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD51AB99E38003B669D /* pato.png */; };
+		256C5DF01AB99E38003B669D /* queijo.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD61AB99E38003B669D /* queijo.png */; };
+		256C5DF11AB99E38003B669D /* ra.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD71AB99E38003B669D /* ra.png */; };
+		256C5DF21AB99E38003B669D /* sabao.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD81AB99E38003B669D /* sabao.png */; };
+		256C5DF31AB99E38003B669D /* torta.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DD91AB99E38003B669D /* torta.png */; };
+		256C5DF41AB99E38003B669D /* unicornio.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DDA1AB99E38003B669D /* unicornio.png */; };
+		256C5DF51AB99E38003B669D /* violao.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DDB1AB99E38003B669D /* violao.png */; };
+		256C5DF61AB99E38003B669D /* whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DDC1AB99E38003B669D /* whisky.png */; };
+		256C5DF71AB99E38003B669D /* xadrez.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DDD1AB99E38003B669D /* xadrez.png */; };
+		256C5DF81AB99E38003B669D /* yugioh.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DDE1AB99E38003B669D /* yugioh.png */; };
+		256C5DF91AB99E38003B669D /* zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DDF1AB99E38003B669D /* zebra.png */; };
+		256C5DFF1AB9A07E003B669D /* esquilo.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5DFE1AB9A07E003B669D /* esquilo.png */; };
+		256C5E021AB9AB90003B669D /* TabbedDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C5E011AB9AB90003B669D /* TabbedDictionaryViewController.m */; };
+		256C5E041AB9ADEB003B669D /* tabDicionario.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5E031AB9ADEB003B669D /* tabDicionario.png */; };
+		256C5E061AB9AE2C003B669D /* navDicionario.png in Resources */ = {isa = PBXBuildFile; fileRef = 256C5E051AB9AE2C003B669D /* navDicionario.png */; };
 		25E555AA1AB7013700C3A0F8 /* Letra.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E555A91AB7013700C3A0F8 /* Letra.m */; };
-		25E555AD1AB7100F00C3A0F8 /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E555AC1AB7100F00C3A0F8 /* LetraViewController.m */; };
+		25E555AD1AB7100F00C3A0F8 /* NavigationDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E555AC1AB7100F00C3A0F8 /* NavigationDictionaryViewController.m */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -37,10 +66,40 @@
 /* Begin PBXFileReference section */
 		2531C20F1AB7212200CA7CFB /* Alfabeto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alfabeto.h; sourceTree = "<group>"; };
 		2531C2101AB7212200CA7CFB /* Alfabeto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alfabeto.m; sourceTree = "<group>"; };
+		256C5DC61AB99E38003B669D /* abelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abelha.png; sourceTree = "<group>"; };
+		256C5DC71AB99E38003B669D /* bola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bola.png; sourceTree = "<group>"; };
+		256C5DC81AB99E38003B669D /* carro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carro.png; sourceTree = "<group>"; };
+		256C5DC91AB99E38003B669D /* dado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dado.png; sourceTree = "<group>"; };
+		256C5DCB1AB99E38003B669D /* faca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faca.png; sourceTree = "<group>"; };
+		256C5DCC1AB99E38003B669D /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
+		256C5DCD1AB99E38003B669D /* helicoptero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helicoptero.png; sourceTree = "<group>"; };
+		256C5DCE1AB99E38003B669D /* igreja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = igreja.png; sourceTree = "<group>"; };
+		256C5DCF1AB99E38003B669D /* janela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = janela.png; sourceTree = "<group>"; };
+		256C5DD01AB99E38003B669D /* ketchup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ketchup.png; sourceTree = "<group>"; };
+		256C5DD11AB99E38003B669D /* lampada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lampada.png; sourceTree = "<group>"; };
+		256C5DD21AB99E38003B669D /* moeda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moeda.png; sourceTree = "<group>"; };
+		256C5DD31AB99E38003B669D /* navio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navio.png; sourceTree = "<group>"; };
+		256C5DD41AB99E38003B669D /* ovo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ovo.png; sourceTree = "<group>"; };
+		256C5DD51AB99E38003B669D /* pato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pato.png; sourceTree = "<group>"; };
+		256C5DD61AB99E38003B669D /* queijo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queijo.png; sourceTree = "<group>"; };
+		256C5DD71AB99E38003B669D /* ra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ra.png; sourceTree = "<group>"; };
+		256C5DD81AB99E38003B669D /* sabao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sabao.png; sourceTree = "<group>"; };
+		256C5DD91AB99E38003B669D /* torta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torta.png; sourceTree = "<group>"; };
+		256C5DDA1AB99E38003B669D /* unicornio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicornio.png; sourceTree = "<group>"; };
+		256C5DDB1AB99E38003B669D /* violao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violao.png; sourceTree = "<group>"; };
+		256C5DDC1AB99E38003B669D /* whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whisky.png; sourceTree = "<group>"; };
+		256C5DDD1AB99E38003B669D /* xadrez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xadrez.png; sourceTree = "<group>"; };
+		256C5DDE1AB99E38003B669D /* yugioh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yugioh.png; sourceTree = "<group>"; };
+		256C5DDF1AB99E38003B669D /* zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zebra.png; sourceTree = "<group>"; };
+		256C5DFE1AB9A07E003B669D /* esquilo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esquilo.png; sourceTree = "<group>"; };
+		256C5E001AB9AB90003B669D /* TabbedDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbedDictionaryViewController.h; sourceTree = "<group>"; };
+		256C5E011AB9AB90003B669D /* TabbedDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbedDictionaryViewController.m; sourceTree = "<group>"; };
+		256C5E031AB9ADEB003B669D /* tabDicionario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabDicionario.png; sourceTree = "<group>"; };
+		256C5E051AB9AE2C003B669D /* navDicionario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navDicionario.png; sourceTree = "<group>"; };
 		25E555A81AB7013700C3A0F8 /* Letra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letra.h; sourceTree = "<group>"; };
 		25E555A91AB7013700C3A0F8 /* Letra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letra.m; sourceTree = "<group>"; };
-		25E555AB1AB7100F00C3A0F8 /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
-		25E555AC1AB7100F00C3A0F8 /* LetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraViewController.m; sourceTree = "<group>"; };
+		25E555AB1AB7100F00C3A0F8 /* NavigationDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationDictionaryViewController.h; sourceTree = "<group>"; };
+		25E555AC1AB7100F00C3A0F8 /* NavigationDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationDictionaryViewController.m; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +142,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256C5DC51AB99DEA003B669D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				256C5E051AB9AE2C003B669D /* navDicionario.png */,
+				256C5E031AB9ADEB003B669D /* tabDicionario.png */,
+				256C5DFE1AB9A07E003B669D /* esquilo.png */,
+				256C5DC61AB99E38003B669D /* abelha.png */,
+				256C5DC71AB99E38003B669D /* bola.png */,
+				256C5DC81AB99E38003B669D /* carro.png */,
+				256C5DC91AB99E38003B669D /* dado.png */,
+				256C5DCB1AB99E38003B669D /* faca.png */,
+				256C5DCC1AB99E38003B669D /* gato.png */,
+				256C5DCD1AB99E38003B669D /* helicoptero.png */,
+				256C5DCE1AB99E38003B669D /* igreja.png */,
+				256C5DCF1AB99E38003B669D /* janela.png */,
+				256C5DD01AB99E38003B669D /* ketchup.png */,
+				256C5DD11AB99E38003B669D /* lampada.png */,
+				256C5DD21AB99E38003B669D /* moeda.png */,
+				256C5DD31AB99E38003B669D /* navio.png */,
+				256C5DD41AB99E38003B669D /* ovo.png */,
+				256C5DD51AB99E38003B669D /* pato.png */,
+				256C5DD61AB99E38003B669D /* queijo.png */,
+				256C5DD71AB99E38003B669D /* ra.png */,
+				256C5DD81AB99E38003B669D /* sabao.png */,
+				256C5DD91AB99E38003B669D /* torta.png */,
+				256C5DDA1AB99E38003B669D /* unicornio.png */,
+				256C5DDB1AB99E38003B669D /* violao.png */,
+				256C5DDC1AB99E38003B669D /* whisky.png */,
+				256C5DDD1AB99E38003B669D /* xadrez.png */,
+				256C5DDE1AB99E38003B669D /* yugioh.png */,
+				256C5DDF1AB99E38003B669D /* zebra.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		27156F4018B76AF50053A99C = {
 			isa = PBXGroup;
 			children = (
@@ -116,16 +210,19 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				256C5DC51AB99DEA003B669D /* images */,
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
-				25E555AB1AB7100F00C3A0F8 /* LetraViewController.h */,
-				25E555AC1AB7100F00C3A0F8 /* LetraViewController.m */,
+				25E555AB1AB7100F00C3A0F8 /* NavigationDictionaryViewController.h */,
+				25E555AC1AB7100F00C3A0F8 /* NavigationDictionaryViewController.m */,
 				25E555A81AB7013700C3A0F8 /* Letra.h */,
 				25E555A91AB7013700C3A0F8 /* Letra.m */,
 				2531C20F1AB7212200CA7CFB /* Alfabeto.h */,
 				2531C2101AB7212200CA7CFB /* Alfabeto.m */,
+				256C5E001AB9AB90003B669D /* TabbedDictionaryViewController.h */,
+				256C5E011AB9AB90003B669D /* TabbedDictionaryViewController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -235,8 +332,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256C5DF11AB99E38003B669D /* ra.png in Resources */,
+				256C5DF41AB99E38003B669D /* unicornio.png in Resources */,
+				256C5DE91AB99E38003B669D /* janela.png in Resources */,
+				256C5DE71AB99E38003B669D /* helicoptero.png in Resources */,
+				256C5DE01AB99E38003B669D /* abelha.png in Resources */,
+				256C5DE11AB99E38003B669D /* bola.png in Resources */,
+				256C5DF21AB99E38003B669D /* sabao.png in Resources */,
+				256C5DF71AB99E38003B669D /* xadrez.png in Resources */,
+				256C5DEA1AB99E38003B669D /* ketchup.png in Resources */,
+				256C5DE61AB99E38003B669D /* gato.png in Resources */,
+				256C5DFF1AB9A07E003B669D /* esquilo.png in Resources */,
+				256C5E041AB9ADEB003B669D /* tabDicionario.png in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				256C5DF01AB99E38003B669D /* queijo.png in Resources */,
+				256C5E061AB9AE2C003B669D /* navDicionario.png in Resources */,
+				256C5DF31AB99E38003B669D /* torta.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				256C5DEB1AB99E38003B669D /* lampada.png in Resources */,
+				256C5DED1AB99E38003B669D /* navio.png in Resources */,
+				256C5DF81AB99E38003B669D /* yugioh.png in Resources */,
+				256C5DEF1AB99E38003B669D /* pato.png in Resources */,
+				256C5DE21AB99E38003B669D /* carro.png in Resources */,
+				256C5DF91AB99E38003B669D /* zebra.png in Resources */,
+				256C5DE51AB99E38003B669D /* faca.png in Resources */,
+				256C5DF61AB99E38003B669D /* whisky.png in Resources */,
+				256C5DE31AB99E38003B669D /* dado.png in Resources */,
+				256C5DEE1AB99E38003B669D /* ovo.png in Resources */,
+				256C5DE81AB99E38003B669D /* igreja.png in Resources */,
+				256C5DEC1AB99E38003B669D /* moeda.png in Resources */,
+				256C5DF51AB99E38003B669D /* violao.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
-				25E555AD1AB7100F00C3A0F8 /* LetraViewController.m in Sources */,
+				25E555AD1AB7100F00C3A0F8 /* NavigationDictionaryViewController.m in Sources */,
+				256C5E021AB9AB90003B669D /* TabbedDictionaryViewController.m in Sources */,
 				25E555AA1AB7013700C3A0F8 /* Letra.m in Sources */,
 				2531C2111AB7212200CA7CFB /* Alfabeto.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,

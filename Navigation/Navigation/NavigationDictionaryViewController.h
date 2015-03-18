@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Letra.h"
 
-@interface LetraViewController : UIViewController
+@interface NavigationDictionaryViewController : UIViewController
 
 @property Letra *letraAtual;
 

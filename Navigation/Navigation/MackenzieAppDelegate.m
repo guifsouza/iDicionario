@@ -8,7 +8,8 @@
 
 #import "MackenzieAppDelegate.h"
 #import "Letra.h"
-#import "LetraViewController.h"
+#import "NavigationDictionaryViewController.h"
+#import "TabbedDictionaryViewController.h"
 #import "Alfabeto.h"
 
 @implementation MackenzieAppDelegate 
@@ -16,18 +17,37 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    //[self.tabBarController setDelegate:self];
+    self.tabBarController = [[UITabBarController alloc] init];
+    
     Alfabeto *alfabeto = [Alfabeto sharedInstance];
     
-    LetraViewController *viewController = [[LetraViewController alloc] initWithNibName:nil bundle:nil];
-    [viewController setLetraAtual:[alfabeto proximaLetra]];
+    NavigationDictionaryViewController *navViewController = [[NavigationDictionaryViewController alloc] initWithNibName:nil bundle:nil];
+    [navViewController setLetraAtual:[alfabeto proximaLetra]];
     
     self.navigationController = [[UINavigationController alloc]
-                                 initWithRootViewController:viewController];
+                                 initWithRootViewController:navViewController];
+    
+    
+    
+    TabbedDictionaryViewController *tabViewController = [[TabbedDictionaryViewController alloc] initWithNibName:nil bundle:nil];
+    
+    
+    
+    NSArray *controllers = [NSArray arrayWithObjects:self.navigationController, tabViewController, nil];
+    
+    [self.tabBarController setViewControllers:controllers];
+
+    [self.navigationController.tabBarItem setTitle:@"Navegação"];
+    [self.navigationController.tabBarItem setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"navDicionario" ofType:@"png"]]];
+    
+    [tabViewController.tabBarItem setTitle:@"Tabela"];
+    [tabViewController.tabBarItem setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tabDicionario" ofType:@"png"]]];
+    
+    
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
-
-
+    self.window.rootViewController = self.tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

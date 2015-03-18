@@ -16,6 +16,7 @@
 - (void)populaAlfabeto;
 - (Letra *)proximaLetra;
 - (Letra *)letraAnterior;
+- (NSArray *)retornaAlfabeto;
 + (Alfabeto *)sharedInstance;
 
 
