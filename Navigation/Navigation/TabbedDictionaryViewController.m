@@ -47,7 +47,7 @@
     
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 26;
+    return [abecedario count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

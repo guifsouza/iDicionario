@@ -28,11 +28,7 @@
     self.navigationController = [[UINavigationController alloc]
                                  initWithRootViewController:navViewController];
     
-    
-    
     TabbedDictionaryViewController *tabViewController = [[TabbedDictionaryViewController alloc] initWithNibName:nil bundle:nil];
-    
-    
     
     NSArray *controllers = [NSArray arrayWithObjects:self.navigationController, tabViewController, nil];
     

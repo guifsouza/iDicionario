@@ -17,6 +17,15 @@
     
     Alfabeto *alfabeto;
     bool executando;
+    
+    //controles de interface
+    UIBarButtonItem *next;
+    UIBarButtonItem *previous;
+    UIImageView *imageView;
+    UILabel *label;
+    UIToolbar *toolBar;
+    UITextField *txtField;
+    UIBarButtonItem *toolBarTextField;
 }
 
 - (void)viewDidLoad {
@@ -24,7 +33,7 @@
     [super viewDidLoad];
 
     alfabeto = [Alfabeto sharedInstance];
-
+    
 }
 
 - (void) recarregaInterface {
@@ -33,29 +42,26 @@
     
     [self.navigationController.tabBarItem setTitle:@"Navegação"];
     self.navigationItem.title = [self.letraAtual.palavra substringToIndex:1];
-    UIBarButtonItem *next = [[UIBarButtonItem alloc]
+    
+    next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
     
-    UIBarButtonItem *previous = [[UIBarButtonItem alloc]
+    previous = [[UIBarButtonItem alloc]
                                  initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(previous:)];
     self.navigationItem.leftBarButtonItem = previous;
     
-//    UILabel *letraLabel = [UILabel init];
-//    [letraLabel setText:[self.letraAtual.palavra substringToIndex:1]];
-//    
-    UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
-    [botao
-     setTitle:self.letraAtual.palavra
-     forState:UIControlStateNormal];
-    [botao sizeToFit];
-
-    [self.view addSubview:botao];
+    label = [UILabel new];
+    [label setText:self.letraAtual.palavra];
+    [label sizeToFit];
+    label.preferredMaxLayoutWidth = 80;
+    [self.view addSubview:label];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(35, -500, 250, 250)];
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(35, -500, 250, 250)];
     
     NSString *imgUrl = [[NSBundle mainBundle] pathForResource:self.letraAtual.caminhoImagem ofType:@"png"];
     [imageView setImage:[UIImage imageWithContentsOfFile:imgUrl]];
+    [imageView setUserInteractionEnabled:YES];
     [self.view addSubview:imageView];
     
     [UIView animateWithDuration:0.6
@@ -66,8 +72,21 @@
                      }
                      completion:nil];
     
-    [botao setCenter:CGPointMake(imageView.center.x, imageView.center.y + 150)];
+    [label setCenter:CGPointMake(imageView.center.x, imageView.center.y + 150)];
+    
+    
+    toolBar = [[UIToolbar alloc] init];
+    toolBar.frame = CGRectMake(0, 64, self.view.frame.size.width, 44);
+
+    txtField = [[UITextField alloc] initWithFrame: CGRectMake(0, 65, self.view.frame.size.width, 42)];
+    txtField.placeholder = @"Alterar a palavra...";
+    
+    toolBarTextField = [[UIBarButtonItem alloc] initWithCustomView:txtField];
+    [toolBar setItems:[NSArray arrayWithObject:toolBarTextField]];
+    
+    [self.view addSubview:toolBar];
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -76,6 +95,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    
     executando = NO;
     
     [self recarregaInterface];
@@ -87,7 +107,7 @@
     if (executando) return;
     executando = YES;
     
-    int selfIndex = [self.navigationController.viewControllers indexOfObject:self];
+    int selfIndex = (int)[self.navigationController.viewControllers indexOfObject:self];
     
     NavigationDictionaryViewController *view = nil;
     NSMutableArray *viewsArray = [self.navigationController.viewControllers mutableCopy];
@@ -105,8 +125,6 @@
     [self.navigationController pushViewController:view animated:NO];
 
     
-    NSLog([NSString stringWithFormat:@"%lu", (unsigned long)self.navigationController.viewControllers.count]);
-    
 }
 
 - (void)previous:(id)sender {
@@ -114,7 +132,7 @@
     if (executando) return;
     executando = YES;
     
-    int selfIndex = [self.navigationController.viewControllers indexOfObject:self];
+    int selfIndex = (int)[self.navigationController.viewControllers indexOfObject:self];
     
     NavigationDictionaryViewController *view = nil;
     NSMutableArray *viewsArray = [self.navigationController.viewControllers mutableCopy];
@@ -131,9 +149,31 @@
     [view setLetraAtual:[alfabeto letraAnterior]];
     [self.navigationController pushViewController:view animated:NO];
     
-    NSLog([NSString stringWithFormat:@"%lu", (unsigned long)self.navigationController.viewControllers.count]);
+}
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
+    if (![txtField.text isEqualToString:@""]) {
+
+        [label setText:txtField.text];
+        [txtField setText:@""];
+        [label sizeToFit];
+        [label setCenter:CGPointMake(imageView.center.x, imageView.center.y + 150)];
+    }
+    
+    [txtField resignFirstResponder];
+    
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *toque = [touches anyObject];
+    
+    if (toque.view == imageView) {
+        CGPoint location = [toque locationInView:self.view];
+    
+        imageView.center = location;
+    }
 }
 
 
