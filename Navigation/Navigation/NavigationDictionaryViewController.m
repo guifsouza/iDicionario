@@ -153,6 +153,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
+    //tratamento da função de mudar a palavra
     if (![txtField.text isEqualToString:@""]) {
 
         [label setText:txtField.text];
@@ -162,6 +163,30 @@
     }
     
     [txtField resignFirstResponder];
+    
+    
+    //zoom na imagem
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:0
+                     animations:^ (void) {
+                         imageView.frame = CGRectMake(35, 150, 400, 400);
+                         imageView.center = self.view.center;
+                     }
+                     completion:nil];
+    
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+
+    //zoom back da imagem
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:0
+                     animations:^ (void) {
+                         imageView.frame = CGRectMake(35, 150, 250, 250);
+                     }
+                     completion:nil];
     
 }
 
@@ -175,6 +200,7 @@
         imageView.center = location;
     }
 }
+
 
 
 
